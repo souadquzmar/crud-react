@@ -3,7 +3,7 @@ import Index from '../user/Index'
 
 export default function Home() {
   return (
-    <div className='home'>
+    <div className='home container p-3'>
       <h2>Home</h2>
       <Index />
     </div>

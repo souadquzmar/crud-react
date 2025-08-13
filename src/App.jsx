@@ -5,6 +5,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Create from './pages/user/Create'
 import About from './pages/about/About'
+import Details from './pages/user/Details'
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Route path='/users' element={<Home />}></Route>
       <Route path='/add' element={<Create/>}></Route>
       <Route path='/about' element={<About/>}></Route>
+      <Route path='/details/:id' element={<Details/>}></Route>
     </Routes>
     <Footer />
     </>

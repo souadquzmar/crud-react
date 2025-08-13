@@ -20,5 +20,5 @@ export default function useFetch(path) {
         getData();
       },[]);
 
-      return {data,error,isLoading};
+      return {data,error,isLoading,setData};
 }
