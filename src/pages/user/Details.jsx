@@ -10,7 +10,7 @@ export default function Details() {
     if(isLoading) return <Loader />;
     if(error) return <p className='text-danger'>{error.message}</p>;
   return (
-    <div>
+    <div className='container p-3'>
         <h2>Details</h2>
         <p>Name: {data.user.userName}</p>
         <p>Email: {data.user.email}</p>
