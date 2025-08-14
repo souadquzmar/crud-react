@@ -44,6 +44,7 @@ export default function Index() {
                                 <td>{user.phone}</td>
                                 <td>
                                     <Link to={`/details/${user._id}`} className='btn btn-info me-2 text-white'>Details</Link>
+                                    <Link to={`/edit/${user._id}`} className='btn btn-primary me-2 text-white'>Edit</Link>
                                     <button className='btn btn-danger' onClick={() => removeUser(user._id)}>Delete</button>
                                 </td>
                             </tr>

@@ -6,6 +6,7 @@ import Home from './pages/home/Home'
 import Create from './pages/user/Create'
 import About from './pages/about/About'
 import Details from './pages/user/Details'
+import Edit from './pages/user/Edit'
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path='/add' element={<Create/>}></Route>
       <Route path='/about' element={<About/>}></Route>
       <Route path='/details/:id' element={<Details/>}></Route>
+      <Route path='/edit/:id' element={<Edit/>}></Route>
     </Routes>
     <Footer />
     </>
